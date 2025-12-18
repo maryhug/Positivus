@@ -1,0 +1,1553 @@
+/* ========================================
+   RESET Y ESTILOS BASE
+   ======================================== */
+
+/* Reset universal - Elimina estilos predeterminados del navegador */
+* {
+    margin: 0; /* Elimina márgenes externos */
+    padding: 0; /* Elimina relleno interno */
+    box-sizing: border-box; /* Incluye padding y border en el ancho/alto total */
+}
+
+/* Estilos del body - Contenedor principal */
+body {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; /* Fuente principal con fallbacks */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Color de texto negro */
+}
+
+/* ========================================
+   HEADER Y NAVEGACIÓN
+   ======================================== */
+
+/* Cabecera del sitio */
+header {
+    padding: 20px 80px; /* Relleno: 20px arriba/abajo, 80px laterales */
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Contenedor de navegación */
+nav {
+    display: flex; /* Activa flexbox */
+    justify-content: space-between; /* Distribuye elementos con espacio entre ellos */
+    align-items: center; /* Centra verticalmente */
+    gap: 40px; /* Espacio de 40px entre elementos flex */
+}
+
+/* Contenedor del logo */
+.logo img {
+    height: 40px; /* Altura fija del logo */
+}
+
+/* Lista del menú */
+.menu ul {
+    display: flex; /* Activa flexbox */
+    list-style: none; /* Elimina viñetas de lista */
+    gap: 40px; /* Espacio de 40px entre elementos */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Enlaces del menú */
+.menu ul li a {
+    text-decoration: none; /* Elimina subrayado */
+    color: #000000; /* Color negro */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave de color en 0.3 segundos */
+}
+
+/* Enlaces del menú al pasar el mouse */
+.menu ul li a:hover {
+    color: #B9FF66; /* Cambia a color verde */
+}
+
+/* Botón de navegación */
+.button-nav {
+    padding: 16px 32px; /* Relleno: 16px arriba/abajo, 32px laterales */
+    background-color: transparent; /* Fondo transparente */
+    border: 1px solid #191A23; /* Borde sólido de 1px negro */
+    border-radius: 8px; /* Esquinas redondeadas de 8px */
+    cursor: pointer; /* Cursor de mano al pasar sobre él */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: all 0.3s; /* Transición suave de todas las propiedades */
+}
+
+/* Botón de navegación al pasar el mouse */
+.button-nav:hover {
+    background-color: #191A23; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* ========================================
+   CONTENIDO PRINCIPAL
+   ======================================== */
+
+/* Contenedor principal */
+main {
+    padding: 0 80px; /* Sin padding arriba/abajo, 80px laterales */
+}
+
+/* ========================================
+   SECCIÓN HERO
+   ======================================== */
+
+/* Sección hero principal */
+.hero {
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    gap: 60px; /* Espacio de 60px entre elementos */
+    padding: 60px 0; /* Relleno: 60px arriba/abajo, sin laterales */
+    min-height: 70vh; /* Altura mínima del 70% del viewport */
+}
+
+/* Contenido de texto del hero */
+.hero-content {
+    flex: 1; /* Ocupa 1 parte del espacio disponible */
+}
+
+/* Título principal del hero */
+.hero-content h1 {
+    font-size: 56px; /* Tamaño de fuente grande */
+    font-weight: 500; /* Grosor medio */
+    line-height: 1.2; /* Altura de línea (espaciado vertical) */
+    margin-bottom: 24px; /* Margen inferior */
+}
+
+/* Párrafo del hero */
+.hero-content p {
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    margin-bottom: 32px; /* Margen inferior */
+    max-width: 500px; /* Ancho máximo */
+}
+
+/* Botones principales (hero, proposal, team) */
+.hero-button,
+.proposal-button,
+.team-button {
+    padding: 18px 36px; /* Relleno: 18px arriba/abajo, 36px laterales */
+    background-color: #191A23; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s; /* Transición suave del fondo */
+}
+
+/* Botones principales al pasar el mouse */
+.hero-button:hover,
+.proposal-button:hover,
+.team-button:hover {
+    background-color: #B9FF66; /* Fondo verde */
+    color: #191A23; /* Texto negro */
+}
+
+/* Contenedor de imagen del hero */
+.hero-image {
+    flex: 1; /* Ocupa 1 parte del espacio disponible */
+}
+
+/* Imagen del hero */
+.hero-image img {
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 500px; /* Ancho máximo */
+}
+
+/* ========================================
+   SECCIÓN APLICACIONES
+   ======================================== */
+
+/* Contenedor de logos de aplicaciones */
+.aplications {
+    display: flex; /* Activa flexbox */
+    justify-content: space-between; /* Distribuye con espacio entre elementos */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite saltar a nueva línea */
+    gap: 40px; /* Espacio entre elementos */
+    padding: 60px 30px; /* Relleno */
+    filter: grayscale(100%); /* Convierte a escala de grises */
+    opacity: 0.6; /* Transparencia del 60% */
+}
+
+/* Imágenes de aplicaciones */
+.aplications img {
+    height: 40px; /* Altura fija */
+}
+
+/* ========================================
+   SECCIÓN SERVICIOS
+   ======================================== */
+
+/* Contenedor de servicios */
+.services {
+    padding: 60px 0; /* Relleno arriba/abajo */
+}
+
+/* Encabezado de servicios */
+.services-header {
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    gap: 40px; /* Espacio entre elementos */
+    margin-bottom: 60px; /* Margen inferior */
+}
+
+/* Título de sección */
+.section-title {
+    font-size: 30px; /* Tamaño de fuente */
+    font-weight: 500; /* Grosor medio */
+    line-height: 1.6; /* Altura de línea */
+}
+
+/* Span dentro del título (resaltado) */
+.section-title span {
+    background-color: #B9FF66; /* Fondo verde */
+    border-radius: 0.7rem; /* Esquinas redondeadas */
+    padding: 4px 8px; /* Relleno pequeño */
+}
+
+/* Párrafo del encabezado de servicios */
+.services-header p {
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    max-width: 580px; /* Ancho máximo */
+}
+
+/* Grid de tarjetas de servicios */
+.services-grid {
+    display: grid; /* Activa grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    gap: 40px; /* Espacio entre celdas */
+}
+
+/* Tarjeta individual de servicio */
+.service-card {
+    border: 1px solid #191A23; /* Borde sólido negro */
+    border-radius: 45px; /* Esquinas muy redondeadas */
+    padding: 50px; /* Relleno interno */
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Dirección vertical */
+    justify-content: space-between; /* Distribuye verticalmente con espacio */
+    min-height: 310px; /* Altura mínima */
+    position: relative; /* Contexto de posicionamiento para hijos absolutos */
+    box-shadow: 0 5px 0 #191A23; /* Sombra sólida inferior (efecto 3D) */
+}
+
+/* Tarjeta con fondo gris */
+.card-gray {
+    background-color: #F3F3F3; /* Fondo gris claro */
+}
+
+/* Tarjeta con fondo verde */
+.card-green {
+    background-color: #B9FF66; /* Fondo verde */
+}
+
+/* Tarjeta con fondo oscuro */
+.card-dark {
+    background-color: #191A23; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Contenido de la tarjeta de servicio */
+.service-card-content {
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Dirección vertical */
+    gap: 80px; /* Espacio grande entre elementos */
+    z-index: 2; /* Por encima de otros elementos */
+}
+
+/* Título h3 de la tarjeta de servicio */
+.service-card h3 {
+    font-size: 30px; /* Tamaño de fuente */
+    font-weight: 500; /* Grosor medio */
+    line-height: 1.3; /* Altura de línea */
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Dirección vertical */
+    gap: 4px; /* Espacio pequeño entre elementos */
+}
+
+/* Span dentro del h3 (resaltado) */
+.service-card h3 span {
+    display: inline-block; /* Permite aplicar padding */
+    background-color: #B9FF66; /* Fondo verde */
+    padding: 4px 8px; /* Relleno pequeño */
+    border-radius: 4px; /* Esquinas redondeadas */
+    width: fit-content; /* Ancho ajustado al contenido */
+}
+
+/* Título con clase white-title */
+.service-card h3.white-title span {
+    background-color: #ffffff; /* Fondo blanco */
+    color: black; /* Texto negro */
+}
+
+/* Span dentro de h3 en tarjeta oscura */
+.card-dark h3 span {
+    background-color: #B9FF66; /* Fondo verde */
+    color: #000000; /* Texto negro */
+}
+
+/* Enlace de servicio */
+.service-link {
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    gap: 15px; /* Espacio entre elementos */
+    font-size: 20px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de mano */
+}
+
+/* Ícono circular del enlace */
+.link-icon {
+    width: 41px; /* Ancho */
+    height: 41px; /* Alto */
+    border-radius: 50%; /* Forma circular */
+    background-color: #191A23; /* Fondo negro */
+    color: #B9FF66; /* Color verde */
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    font-size: 24px; /* Tamaño de fuente */
+    flex-shrink: 0; /* No se encoge */
+    transition: transform 0.3s ease; /* Transición suave de transformación */
+}
+
+/* Ícono al pasar mouse sobre el enlace */
+.service-link:hover .link-icon {
+    transform: rotate(45deg); /* Rota 45 grados */
+}
+
+/* Ícono en tarjeta oscura */
+.card-dark .link-icon {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #191A23; /* Color negro */
+}
+
+/* Contenedor de imagen de servicio */
+.service-image {
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 50px; /* 50px desde el fondo */
+    right: 50px; /* 50px desde la derecha */
+    width: 200px; /* Ancho */
+    height: 180px; /* Alto */
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+/* Imagen dentro del contenedor de servicio */
+.service-image img {
+    max-width: 100%; /* Ancho máximo del contenedor */
+    max-height: 100%; /* Alto máximo del contenedor */
+    object-fit: contain; /* Mantiene proporciones sin recortar */
+}
+
+/* ========================================
+   SECCIÓN PROPUESTA
+   ======================================== */
+
+/* Contenedor de propuesta con grid */
+.proposal {
+    display: grid; /* Activa grid layout */
+    grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+    grid-template-rows: auto auto; /* 2 filas automáticas */
+    gap: 30px; /* Espacio entre celdas */
+    background-color: #F3F3F3; /* Fondo gris claro */
+    border-radius: 24px; /* Esquinas redondeadas */
+    padding: 60px; /* Relleno interno */
+    margin: 60px 0; /* Margen arriba/abajo */
+}
+
+/* Texto de propuesta */
+.proposal-text {
+    grid-column: 1; /* Columna 1 */
+    grid-row: 1; /* Fila 1 */
+}
+
+/* Título h2 de propuesta */
+.proposal-text h2 {
+    font-size: 42px; /* Tamaño de fuente grande */
+    font-weight: 500; /* Grosor medio */
+    margin-bottom: 24px; /* Margen inferior */
+}
+
+/* Párrafo de propuesta */
+.proposal-text p {
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+}
+
+/* Contenedor del botón de propuesta */
+.proposal-button-container {
+    grid-column: 1; /* Columna 1 */
+    grid-row: 2; /* Fila 2 */
+    display: flex; /* Activa flexbox */
+    align-items: flex-start; /* Alinea al inicio */
+}
+
+/* Imagen de propuesta */
+.proposal-image {
+    grid-column: 2; /* Columna 2 */
+    grid-row: 1 / 3; /* Abarca filas 1 y 2 */
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+/* Imagen dentro de propuesta */
+.proposal-image img {
+    width: 100%; /* Ancho completo */
+    max-width: 400px; /* Ancho máximo */
+}
+
+/* ========================================
+   SECCIÓN CASOS DE ESTUDIO
+   ======================================== */
+
+/* Grid de casos de estudio */
+.case-studies-grid {
+    display: grid; /* Activa grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 40px; /* Espacio entre celdas */
+    padding: 40px 50px; /* Relleno interno */
+    background-color: #191A23; /* Fondo negro */
+    border-radius: 2rem; /* Esquinas redondeadas */
+    margin-bottom: 5rem; /* Margen inferior */
+}
+
+/* Tarjeta de caso de estudio */
+.case-studies-card {
+    background-color: #191A23; /* Fondo negro */
+    border: 1px solid #ffffff1a; /* Borde blanco semi-transparente */
+    border-radius: 45px; /* Esquinas muy redondeadas */
+    padding: 40px 50px; /* Relleno interno */
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Dirección vertical */
+    justify-content: space-between; /* Distribuye verticalmente */
+    min-height: 280px; /* Altura mínima */
+    transition: all 0.3s ease; /* Transición suave de todas las propiedades */
+}
+
+/* Tarjeta al pasar el mouse */
+.case-studies-card:hover {
+    background-color: #1f2028; /* Fondo ligeramente más claro */
+}
+
+/* Párrafo en grid de casos de estudio */
+.case-studies-grid p {
+    color: #ffffff; /* Texto blanco */
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Enlaces en casos de estudio */
+.case-studies-grid .service-link {
+    color: #B9FF66; /* Color verde */
+    font-weight: 500; /* Grosor medio */
+}
+
+/* Ícono de enlace en casos de estudio */
+.case-studies-grid .link-icon {
+    background-color: #191A23; /* Fondo negro */
+}
+
+/* Material icon dentro del ícono */
+.case-studies-grid .link-icon .material-symbols-outlined {
+    color: #B9FF66; /* Color verde */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+/* ========================================
+   SECCIÓN PROCESO DE TRABAJO
+   ======================================== */
+
+/* Contenedor del proceso de trabajo */
+.our-working {
+    padding: 40px 0; /* Relleno arriba/abajo */
+}
+
+/* Item de acordeón (details element) */
+.accordion-item {
+    background-color: #F3F3F3; /* Fondo gris claro */
+    border: 1px solid #191A23; /* Borde negro */
+    border-radius: 45px; /* Esquinas muy redondeadas */
+    padding: 30px 30px 30px 40px; /* Relleno asimétrico */
+    margin-bottom: 20px; /* Margen inferior */
+    box-shadow: 0 5px 0 #191A23; /* Sombra sólida inferior */
+    transition: background-color 0.3s ease; /* Transición suave del fondo */
+}
+
+/* Acordeón abierto */
+.accordion-item[open] {
+    background-color: #B9FF66; /* Fondo verde */
+}
+
+/* Summary del acordeón (título clickeable) */
+.accordion-item summary {
+    display: flex; /* Activa flexbox */
+    justify-content: space-between; /* Distribuye con espacio entre elementos */
+    align-items: center; /* Centra verticalmente */
+    cursor: pointer; /* Cursor de mano */
+    list-style: none; /* Elimina marcador de lista */
+    user-select: none; /* Evita selección de texto */
+}
+
+/* Elimina marcador en navegadores webkit */
+.accordion-item summary::-webkit-details-marker {
+    display: none; /* Oculta */
+}
+
+/* Encabezado del acordeón */
+.accordion-header {
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    gap: 25px; /* Espacio entre elementos */
+    flex: 0 1 auto; /* No crece, puede encogerse */
+}
+
+/* Número del acordeón */
+.accordion-number {
+    font-size: 60px; /* Tamaño de fuente muy grande */
+    font-weight: 500; /* Grosor medio */
+}
+
+/* Título del acordeón */
+.accordion-title {
+    font-size: 30px; /* Tamaño de fuente */
+    font-weight: 500; /* Grosor medio */
+}
+
+/* Símbolo + en acordeón cerrado */
+.accordion-item summary::after {
+    content: '+'; /* Contenido generado: símbolo más */
+    width: 58px; /* Ancho */
+    height: 58px; /* Alto */
+    border: 1px solid #191A23; /* Borde negro */
+    border-radius: 50%; /* Forma circular */
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    font-size: 40px; /* Tamaño grande */
+    font-weight: 300; /* Grosor ligero */
+    background-color: #F3F3F3; /* Fondo gris */
+    flex-shrink: 0; /* No se encoge */
+    transition: transform 0.3s ease; /* Transición suave de transformación */
+}
+
+/* Símbolo - en acordeón abierto */
+.accordion-item[open] summary::after {
+    content: '−'; /* Contenido generado: símbolo menos */
+    background-color: #B9FF66; /* Fondo verde */
+    transform: rotate(180deg); /* Rota 180 grados */
+}
+
+/* Contenido del acordeón */
+.accordion-content {
+    padding-top: 30px; /* Relleno superior */
+    margin-top: 25px; /* Margen superior */
+    border-top: 1px solid #191A23; /* Borde superior */
+}
+
+/* Párrafo dentro del contenido del acordeón */
+.accordion-content p {
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    margin: 0; /* Sin margen */
+}
+
+/* ========================================
+   SECCIÓN EQUIPO
+   ======================================== */
+
+/* Contenedor de equipo */
+.team {
+    padding: 30px 0; /* Relleno arriba/abajo */
+}
+
+/* Grid de tarjetas de equipo */
+.team-grid {
+    display: grid; /* Activa grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 40px; /* Espacio entre celdas */
+    margin-bottom: 40px; /* Margen inferior */
+}
+
+/* Tarjeta de miembro del equipo */
+.team-card {
+    border: 1px solid #191A23; /* Borde negro */
+    border-radius: 45px; /* Esquinas muy redondeadas */
+    padding: 40px; /* Relleno interno */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 5px 0 #191A23; /* Sombra sólida inferior */
+    transition: transform 0.3s ease; /* Transición suave de transformación */
+}
+
+/* Tarjeta al pasar el mouse */
+.team-card:hover {
+    transform: translateY(-5px); /* Desplaza 5px hacia arriba */
+}
+
+/* Encabezado de tarjeta de equipo */
+.team-header {
+    display: flex; /* Activa flexbox */
+    justify-content: space-between; /* Distribuye con espacio entre elementos */
+    align-items: flex-start; /* Alinea al inicio */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Ícono de LinkedIn */
+.linkedin-icon {
+    width: 36px; /* Ancho */
+    height: 36px; /* Alto */
+    background-color: #191A23; /* Fondo negro */
+    border-radius: 50%; /* Forma circular */
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición suave del fondo */
+}
+
+/* Ícono de LinkedIn al pasar el mouse */
+.linkedin-icon:hover {
+    background-color: #B9FF66; /* Fondo verde */
+}
+
+/* Material icon dentro del ícono de LinkedIn */
+.linkedin-icon .material-symbols-outlined {
+    color: #B9FF66; /* Color verde */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+/* Material icon al pasar mouse sobre LinkedIn */
+.linkedin-icon:hover .material-symbols-outlined {
+    color: #191A23; /* Color negro */
+}
+
+/* Información del miembro del equipo */
+.team-info {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Nombre del miembro (h3) */
+.team-info h3 {
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: 500; /* Grosor medio */
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+/* Rol del miembro */
+.team-role {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #666; /* Color gris */
+}
+
+/* Divisor horizontal en tarjeta de equipo */
+.team-divider {
+    border: none; /* Sin borde predeterminado */
+    border-top: 1px solid #191A23; /* Borde superior negro */
+    margin: 20px 0; /* Margen arriba/abajo */
+}
+
+/* Descripción del miembro */
+.team-description {
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+}
+
+/* Contenedor de llamada a la acción del equipo */
+.team-cta {
+    display: flex; /* Activa flexbox */
+    justify-content: flex-end; /* Alinea a la derecha */
+}
+
+/* ========================================
+   SECCIÓN TESTIMONIOS
+   ======================================== */
+
+/* Contenedor de testimonios */
+.testimonials {
+    padding: 60px 0; /* Relleno arriba/abajo */
+}
+
+/* Contenedor interno de testimonios */
+.testimonials-container {
+    background-color: #191A23; /* Fondo negro */
+    border-radius: 45px; /* Esquinas muy redondeadas */
+    padding: 80px 100px; /* Relleno amplio */
+    position: relative; /* Contexto de posicionamiento */
+}
+
+/* Slider de testimonios */
+.testimonials-slider {
+    display: flex; /* Activa flexbox */
+    gap: 40px; /* Espacio entre elementos */
+    overflow-x: hidden; /* Oculta desbordamiento horizontal */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+/* Tarjeta de testimonio individual */
+.testimonial-card {
+    min-width: 100%; /* Ancho mínimo completo */
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Dirección vertical */
+    gap: 100px; /* Espacio grande entre elementos */
+}
+
+/* Texto del testimonio */
+.testimonial-text {
+    color: #ffffff; /* Texto blanco */
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    position: relative; /* Contexto de posicionamiento */
+    padding: 50px; /* Relleno interno */
+    border: 1px solid #B9FF66; /* Borde verde */
+    border-radius: 25px; /* Esquinas redondeadas */
+}
+
+/* Flecha triangular inferior del testimonio */
+.testimonial-text::after {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: -20px; /* 20px debajo del borde inferior */
+    left: 80px; /* 80px desde la izquierda */
+    width: 0; /* Sin ancho */
+    height: 0; /* Sin alto */
+    border-left: 20px solid transparent; /* Borde izquierdo transparente */
+    border-right: 20px solid transparent; /* Borde derecho transparente */
+    border-top: 20px solid #B9FF66; /* Borde superior verde (forma triángulo) */
+}
+
+/* Información del autor del testimonio */
+.testimonial-author {
+    padding-left: 80px; /* Relleno izquierdo */
+}
+
+/* Nombre del autor */
+.author-name {
+    color: #B9FF66; /* Color verde */
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: 500; /* Grosor medio */
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+/* Posición del autor */
+.author-position {
+    color: #ffffff; /* Texto blanco */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Navegación de testimonios */
+.testimonials-navigation {
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Distribuye con espacio entre elementos */
+    margin-top: 80px; /* Margen superior */
+}
+
+/* Flecha de navegación */
+.testimonial-arrow {
+    width: 50px; /* Ancho */
+    height: 50px; /* Alto */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    color: #ffffff; /* Color blanco */
+    cursor: pointer; /* Cursor de mano */
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    transition: transform 0.3s ease; /* Transición suave de transformación */
+}
+
+/* Flecha al pasar el mouse */
+.testimonial-arrow:hover {
+    transform: scale(1.2); /* Escala 1.2x (20% más grande) */
+}
+
+/* Material icon dentro de la flecha */
+.testimonial-arrow .material-symbols-outlined {
+    font-size: 32px; /* Tamaño de fuente */
+}
+
+/* Contenedor de puntos indicadores */
+.testimonial-dots {
+    display: flex; /* Activa flexbox */
+    gap: 15px; /* Espacio entre puntos */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Punto indicador individual */
+.dot {
+    width: 14px; /* Ancho */
+    height: 14px; /* Alto */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 50%; /* Forma circular */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s ease; /* Transición suave del fondo */
+}
+
+/* Punto activo */
+.dot.active {
+    background-color: #B9FF66; /* Fondo verde */
+}
+
+/* Punto al pasar el mouse */
+.dot:hover {
+    background-color: #B9FF66; /* Fondo verde */
+    opacity: 0.7; /* Transparencia del 70% */
+}
+
+/* ========================================
+   SECCIÓN CONTACTO
+   ======================================== */
+
+/* Contenedor de contacto */
+.contact {
+    padding: 60px 0; /* Relleno arriba/abajo */
+}
+
+/* Contenedor interno de contacto con grid */
+.contact-container {
+    background-color: #F3F3F3; /* Fondo gris claro */
+    border-radius: 45px; /* Esquinas muy redondeadas */
+    padding: 60px; /* Relleno interno */
+    display: grid; /* Activa grid layout */
+    grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+    gap: 80px; /* Espacio entre columnas */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Formulario de contacto */
+.contact-form {
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Dirección vertical */
+    gap: 25px; /* Espacio entre elementos */
+}
+
+/* ========================================
+   BOTONES DE RADIO PERSONALIZADOS
+   ======================================== */
+
+/* Grupo de botones de radio */
+.radio-group {
+    display: flex; /* Activa flexbox */
+    gap: 35px; /* Espacio entre opciones */
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Opción de radio individual */
+.radio-option {
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    gap: 12px; /* Espacio entre radio y etiqueta */
+    cursor: pointer; /* Cursor de mano */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+/* Oculta input de radio nativo */
+.radio-option input[type="radio"] {
+    display: none; /* Oculta */
+}
+
+/* Radio personalizado (círculo) */
+.radio-custom {
+    width: 28px; /* Ancho */
+    height: 28px; /* Alto */
+    border: 1px solid #191A23; /* Borde negro */
+    border-radius: 50%; /* Forma circular */
+    position: relative; /* Contexto de posicionamiento */
+    transition: all 0.3s ease; /* Transición suave de todas las propiedades */
+}
+
+/* Radio personalizado cuando está seleccionado */
+.radio-option input[type="radio"]:checked + .radio-custom {
+    background-color: #B9FF66; /* Fondo verde */
+    border-color: #191A23; /* Borde negro */
+}
+
+/* Punto interno cuando está seleccionado */
+.radio-option input[type="radio"]:checked + .radio-custom::after {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* 50% desde arriba */
+    left: 50%; /* 50% desde izquierda */
+    transform: translate(-50%, -50%); /* Centra perfectamente */
+    width: 12px; /* Ancho */
+    height: 12px; /* Alto */
+    background-color: #191A23; /* Fondo negro */
+    border-radius: 50%; /* Forma circular */
+}
+
+/* Etiqueta del radio */
+.radio-label {
+    font-size: 18px; /* Tamaño de fuente */
+    color: #000000; /* Color negro */
+}
+
+/* ========================================
+   ESTILOS DEL FORMULARIO
+   ======================================== */
+
+/* Formulario dentro de contact-form */
+.contact-form form {
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Dirección vertical */
+    gap: 25px; /* Espacio entre elementos */
+}
+
+/* Grupo de campo del formulario */
+.form-group {
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Dirección vertical */
+    gap: 8px; /* Espacio pequeño entre label e input */
+}
+
+/* Etiqueta del campo */
+.form-group label {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #000000; /* Color negro */
+}
+
+/* Inputs y textareas del formulario */
+.form-group input,
+.form-group textarea {
+    padding: 18px 20px; /* Relleno interno */
+    border: 1px solid #191A23; /* Borde negro */
+    border-radius: 14px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño de fuente */
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; /* Fuente consistente */
+    background-color: #ffffff; /* Fondo blanco */
+    transition: border-color 0.3s ease; /* Transición suave del borde */
+}
+
+/* Inputs y textareas al enfocar */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none; /* Elimina outline predeterminado */
+    border-color: #B9FF66; /* Borde verde */
+}
+
+/* Textarea específico */
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar solo verticalmente */
+    min-height: 120px; /* Altura mínima */
+}
+
+/* Botón del formulario de contacto */
+.contact-button {
+    padding: 20px 36px; /* Relleno interno */
+    background-color: #191A23; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 14px; /* Esquinas redondeadas */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de mano */
+    transition: all 0.3s ease; /* Transición suave de todas las propiedades */
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; /* Fuente consistente */
+}
+
+/* Botón de contacto al pasar el mouse */
+.contact-button:hover {
+    background-color: #B9FF66; /* Fondo verde */
+    color: #191A23; /* Texto negro */
+}
+
+/* ========================================
+   ILUSTRACIÓN DE CONTACTO
+   ======================================== */
+
+/* Contenedor de ilustración */
+.contact-illustration {
+    display: flex; /* Activa flexbox */
+    align-items: flex-end; /* Alinea al final (abajo) */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+/* Imagen de ilustración */
+.contact-illustration img {
+    width: 100%; /* Ancho completo */
+    max-width: 900px; /* Ancho máximo */
+    transform: translateY(10%); /* Desplaza 10% hacia abajo */
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.3; /* Transparencia del 30% al inicio/final */
+    }
+    50% {
+        opacity: 1; /* Opacidad completa a la mitad */
+    }
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+/* Pie de página */
+footer {
+    background-color: #191A23; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 50px 80px 40px; /* Relleno: 50px arriba, 80px laterales, 40px abajo */
+    margin-top: 80px; /* Margen superior */
+}
+
+/* Contenedor del footer */
+.footer-content {
+    max-width: 1440px; /* Ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Parte superior del footer */
+.footer-top {
+    display: flex; /* Activa flexbox */
+    justify-content: space-between; /* Distribuye con espacio entre elementos */
+    align-items: center; /* Centra verticalmente */
+    padding-bottom: 40px; /* Relleno inferior */
+    margin-bottom: 50px; /* Margen inferior */
+}
+
+/* Logo del footer */
+.footer-logo img {
+    height: 36px; /* Altura del logo */
+    filter: brightness(0) invert(1); /* Convierte a blanco */
+}
+
+/* Navegación del footer */
+.footer-nav ul {
+    display: flex; /* Activa flexbox */
+    list-style: none; /* Elimina viñetas */
+    gap: 40px; /* Espacio entre elementos */
+}
+
+/* Enlaces de navegación del footer */
+.footer-nav ul li a {
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+/* Enlaces del footer al pasar el mouse */
+.footer-nav ul li a:hover {
+    color: #B9FF66; /* Color verde */
+}
+
+/* Contenedor de redes sociales */
+.footer-social {
+    display: flex; /* Activa flexbox */
+    gap: 20px; /* Espacio entre íconos */
+}
+
+/* Ícono de red social */
+.social-icon {
+    width: 30px; /* Ancho */
+    height: 30px; /* Alto */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 50%; /* Forma circular */
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición suave del fondo */
+}
+
+/* Ícono social al pasar el mouse */
+.social-icon:hover {
+    background-color: #B9FF66; /* Fondo verde */
+}
+
+/* Sección principal del footer */
+.footer-main {
+    display: grid; /* Activa grid layout */
+    grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+    gap: 80px; /* Espacio entre columnas */
+    align-items: center; /* Centra verticalmente */
+    padding: 50px 0; /* Relleno arriba/abajo */
+    background-color: #292A32; /* Fondo gris oscuro */
+    border-radius: 14px; /* Esquinas redondeadas */
+    padding: 60px 60px; /* Relleno interno */
+    margin-bottom: 50px; /* Margen inferior */
+}
+
+/* Información de contacto del footer */
+.footer-contact {
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Dirección vertical */
+    gap: 25px; /* Espacio entre elementos */
+}
+
+/* Etiqueta de contacto */
+.contact-label {
+    background-color: #B9FF66; /* Fondo verde */
+    color: #191A23; /* Texto negro */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: 500; /* Grosor medio */
+    padding: 4px 8px; /* Relleno pequeño */
+    border-radius: 6px; /* Esquinas redondeadas */
+    width: fit-content; /* Ancho ajustado al contenido */
+}
+
+/* Párrafo de información de contacto */
+.contact-info p {
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 1.8; /* Altura de línea */
+    margin: 0; /* Sin margen */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Contenedor del newsletter */
+.footer-newsletter {
+    display: flex; /* Activa flexbox */
+    justify-content: flex-end; /* Alinea a la derecha */
+}
+
+/* Formulario del newsletter */
+.newsletter-form {
+    display: flex; /* Activa flexbox */
+    gap: 20px; /* Espacio entre elementos */
+    background-color: #292A32; /* Fondo gris oscuro */
+    padding: 58px 40px; /* Relleno interno */
+    border: 1px solid #ffffff1a; /* Borde blanco semi-transparente */
+    border-radius: 14px; /* Esquinas redondeadas */
+    width: 100%; /* Ancho completo */
+    max-width: 500px; /* Ancho máximo */
+}
+
+/* Input del newsletter */
+.newsletter-input {
+    flex: 1; /* Ocupa espacio disponible */
+    padding: 18px 24px; /* Relleno interno */
+    border: 1px solid #ffffff; /* Borde blanco */
+    border-radius: 14px; /* Esquinas redondeadas */
+    background-color: #292A32; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+    font-size: 16px; /* Tamaño de fuente */
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; /* Fuente consistente */
+}
+
+/* Placeholder del input del newsletter */
+.newsletter-input::placeholder {
+    color: #ffffff; /* Color blanco */
+    opacity: 0.7; /* Transparencia del 70% */
+}
+
+/* Input del newsletter al enfocar */
+.newsletter-input:focus {
+    outline: none; /* Elimina outline predeterminado */
+    border-color: #B9FF66; /* Borde verde */
+}
+
+/* Botón del newsletter */
+.newsletter-button {
+    padding: 18px 32px; /* Relleno interno */
+    background-color: #B9FF66; /* Fondo verde */
+    color: #191A23; /* Texto negro */
+    border: none; /* Sin borde */
+    border-radius: 14px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: 500; /* Grosor medio */
+    cursor: pointer; /* Cursor de mano */
+    transition: all 0.3s ease; /* Transición suave de todas las propiedades */
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; /* Fuente consistente */
+    white-space: nowrap; /* Evita saltos de línea */
+}
+
+/* Botón del newsletter al pasar el mouse */
+.newsletter-button:hover {
+    background-color: #a3e855; /* Fondo verde más claro */
+    transform: translateY(-2px); /* Desplaza 2px hacia arriba */
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+    display: flex; /* Activa flexbox */
+    justify-content: space-between; /* Distribuye con espacio entre elementos */
+    align-items: center; /* Centra verticalmente */
+    padding-top: 40px; /* Relleno superior */
+    border-top: 1px solid #ffffff1a; /* Borde superior blanco semi-transparente */
+}
+
+/* Párrafo del footer inferior */
+.footer-bottom p {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #ffffff; /* Texto blanco */
+    margin: 0; /* Sin margen */
+}
+
+/* Enlace de privacidad */
+.privacy-link {
+    color: #ffffff; /* Texto blanco */
+    text-decoration: underline; /* Subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+/* Enlace de privacidad al pasar el mouse */
+.privacy-link:hover {
+    color: #B9FF66; /* Color verde */
+}
+
+/* ========================================
+   DISEÑO RESPONSIVO
+   ======================================== */
+
+/* Tablets y pantallas medianas (1024px o menos) */
+@media (max-width: 1024px) {
+    header, main {
+        padding-left: 40px; /* Reduce padding lateral */
+        padding-right: 40px; /* Reduce padding lateral */
+    }
+
+    .hero {
+        flex-direction: column; /* Apila elementos verticalmente */
+    }
+
+    .hero-content h1 {
+        font-size: 42px; /* Reduce tamaño del título */
+    }
+
+    .services-header {
+        flex-direction: column; /* Apila elementos verticalmente */
+        align-items: flex-start; /* Alinea al inicio */
+        gap: 20px; /* Reduce espacio */
+    }
+
+    .case-studies-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 3 */
+        gap: 30px; /* Reduce espacio */
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 3 */
+        gap: 30px; /* Reduce espacio */
+    }
+
+    .testimonials-container {
+        padding: 60px 60px; /* Reduce padding */
+    }
+
+    .testimonial-card {
+        gap: 60px; /* Reduce espacio */
+    }
+
+    .testimonials-navigation {
+        margin-top: 60px; /* Reduce margen */
+    }
+
+    .contact-container {
+        gap: 60px; /* Reduce espacio */
+    }
+
+    .contact-illustration svg {
+        max-width: 300px; /* Reduce tamaño máximo */
+    }
+
+    footer {
+        padding: 40px 40px 30px; /* Reduce padding */
+    }
+
+    .footer-top {
+        flex-wrap: wrap; /* Permite envolver elementos */
+        gap: 30px; /* Añade espacio */
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr; /* 1 columna en lugar de 2 */
+        gap: 40px; /* Reduce espacio */
+        padding: 40px; /* Reduce padding */
+    }
+
+    .newsletter-form {
+        max-width: 100%; /* Ancho completo */
+    }
+}
+
+/* Móviles grandes (768px o menos) */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap; /* Permite envolver elementos */
+    }
+
+    .menu ul {
+        gap: 20px; /* Reduce espacio */
+    }
+
+    .hero-content h1 {
+        font-size: 36px; /* Reduce tamaño del título */
+    }
+
+    .services-grid,
+    .case-studies-grid,
+    .team-grid {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
+
+    .service-card-content {
+        gap: 40px; /* Reduce espacio */
+    }
+
+    .service-image {
+        position: static; /* Posición normal (no absoluta) */
+        margin-top: 20px; /* Añade margen superior */
+        width: 100%; /* Ancho completo */
+        height: 150px; /* Altura fija */
+    }
+
+    .proposal {
+        grid-template-columns: 1fr; /* 1 columna */
+        padding: 40px; /* Reduce padding */
+    }
+
+    .proposal-image {
+        grid-column: 1; /* Columna 1 */
+        grid-row: 3; /* Fila 3 */
+    }
+
+    .accordion-item {
+        padding: 30px 40px; /* Ajusta padding */
+    }
+
+    .accordion-number {
+        font-size: 45px; /* Reduce tamaño */
+    }
+
+    .accordion-title {
+        font-size: 24px; /* Reduce tamaño */
+    }
+
+    .accordion-item summary::after {
+        width: 48px; /* Reduce ancho */
+        height: 48px; /* Reduce alto */
+        font-size: 32px; /* Reduce tamaño de fuente */
+    }
+
+    .team-card {
+        padding: 30px; /* Reduce padding */
+    }
+
+    .testimonials-container {
+        padding: 40px 40px; /* Reduce padding */
+    }
+
+    .testimonial-text {
+        padding: 30px; /* Reduce padding */
+        font-size: 16px; /* Reduce tamaño de fuente */
+    }
+
+    .testimonial-text::after {
+        left: 50px; /* Ajusta posición de la flecha */
+    }
+
+    .testimonial-author {
+        padding-left: 50px; /* Ajusta padding */
+    }
+
+    .testimonial-card {
+        gap: 40px; /* Reduce espacio */
+    }
+
+    .testimonials-navigation {
+        margin-top: 40px; /* Reduce margen */
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr; /* 1 columna */
+        padding: 40px; /* Reduce padding */
+        gap: 40px; /* Reduce espacio */
+    }
+
+    .contact-illustration {
+        order: -1; /* Mueve al principio */
+    }
+
+    .contact-illustration svg {
+        max-width: 250px; /* Reduce tamaño máximo */
+    }
+
+    .radio-group {
+        gap: 25px; /* Reduce espacio */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 15px 18px; /* Reduce padding */
+    }
+
+    footer {
+        padding: 30px 20px 20px; /* Reduce padding */
+    }
+
+    .footer-top {
+        flex-direction: column; /* Apila verticalmente */
+        align-items: flex-start; /* Alinea al inicio */
+        gap: 25px; /* Ajusta espacio */
+    }
+
+    .footer-nav ul {
+        flex-direction: column; /* Apila verticalmente */
+        gap: 15px; /* Reduce espacio */
+    }
+
+    .footer-social {
+        gap: 15px; /* Reduce espacio */
+    }
+
+    .footer-main {
+        padding: 30px; /* Reduce padding */
+    }
+
+    .newsletter-form {
+        flex-direction: column; /* Apila verticalmente */
+        padding: 30px 25px; /* Reduce padding */
+    }
+
+    .footer-bottom {
+        flex-direction: column; /* Apila verticalmente */
+        gap: 15px; /* Añade espacio */
+        align-items: flex-start; /* Alinea al inicio */
+    }
+}
+
+/* Móviles pequeños (480px o menos) */
+@media (max-width: 480px) {
+    header, main {
+        padding-left: 20px; /* Reduce padding lateral */
+        padding-right: 20px; /* Reduce padding lateral */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Apila verticalmente */
+        gap: 15px; /* Reduce espacio */
+    }
+
+    .hero-content h1 {
+        font-size: 28px; /* Reduce tamaño del título */
+    }
+
+    .aplications {
+        gap: 20px; /* Reduce espacio */
+    }
+
+    .service-card {
+        padding: 30px; /* Reduce padding */
+    }
+
+    .section-title {
+        font-size: 28px; /* Reduce tamaño */
+    }
+
+    .accordion-item {
+        padding: 25px 30px; /* Reduce padding */
+    }
+
+    .accordion-header {
+        flex-direction: column; /* Apila verticalmente */
+        align-items: flex-start; /* Alinea al inicio */
+        gap: 10px; /* Reduce espacio */
+    }
+
+    .accordion-number {
+        font-size: 36px; /* Reduce tamaño */
+    }
+
+    .accordion-title {
+        font-size: 20px; /* Reduce tamaño */
+    }
+
+    .team-card {
+        padding: 25px; /* Reduce padding */
+    }
+
+    .team-info h3 {
+        font-size: 18px; /* Reduce tamaño */
+    }
+
+    .testimonials-container {
+        padding: 30px 20px; /* Reduce padding */
+    }
+
+    .testimonial-text {
+        padding: 25px; /* Reduce padding */
+        font-size: 15px; /* Reduce tamaño de fuente */
+    }
+
+    .testimonial-text::after {
+        left: 30px; /* Ajusta posición */
+        border-left: 15px solid transparent; /* Reduce tamaño de flecha */
+        border-right: 15px solid transparent; /* Reduce tamaño de flecha */
+        border-top: 15px solid #B9FF66; /* Reduce tamaño de flecha */
+    }
+
+    .testimonial-author {
+        padding-left: 30px; /* Ajusta padding */
+    }
+
+    .author-name {
+        font-size: 18px; /* Reduce tamaño */
+    }
+
+    .author-position {
+        font-size: 14px; /* Reduce tamaño */
+    }
+
+    .testimonial-arrow {
+        width: 40px; /* Reduce ancho */
+        height: 40px; /* Reduce alto */
+    }
+
+    .testimonial-arrow .material-symbols-outlined {
+        font-size: 24px; /* Reduce tamaño de fuente */
+    }
+
+    .dot {
+        width: 10px; /* Reduce ancho */
+        height: 10px; /* Reduce alto */
+    }
+
+    .testimonial-dots {
+        gap: 10px; /* Reduce espacio */
+    }
+
+    .contact-container {
+        padding: 30px 25px; /* Reduce padding */
+    }
+
+    .radio-group {
+        flex-direction: column; /* Apila verticalmente */
+        gap: 15px; /* Reduce espacio */
+    }
+
+    .radio-label {
+        font-size: 16px; /* Reduce tamaño */
+    }
+
+    .form-group label {
+        font-size: 14px; /* Reduce tamaño */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 14px 16px; /* Reduce padding */
+        font-size: 15px; /* Reduce tamaño de fuente */
+    }
+
+    .contact-button {
+        padding: 18px 32px; /* Ajusta padding */
+        font-size: 16px; /* Reduce tamaño de fuente */
+    }
+
+    .contact-illustration svg {
+        max-width: 200px; /* Reduce tamaño máximo */
+    }
+
+    .newsletter-button {
+        padding: 16px 24px; /* Reduce padding */
+        font-size: 15px; /* Reduce tamaño de fuente */
+    }
+
+    .newsletter-input {
+        padding: 16px 20px; /* Reduce padding */
+        font-size: 15px; /* Reduce tamaño de fuente */
+    }
+}
